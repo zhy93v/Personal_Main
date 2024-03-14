@@ -1,2 +1,1 @@
-﻿  GameCoding.cpp
-  GameCoding.vcxproj -> C:\Users\zhy93\OneDrive\Desktop\UE5\Personal_Main\GameCoding\x64\Debug\GameCoding.exe
+﻿LINK : fatal error LNK1168: cannot open G:\Main\Personal_Main\GameCoding\x64\Debug\GameCoding.exe for writing

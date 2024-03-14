@@ -10,7 +10,7 @@ public:
 	~Game();
 
 public:
-	void Init();
+	void Init(HWND hwnd);
 	void Update();
 	void Render();
 

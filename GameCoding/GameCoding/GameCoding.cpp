@@ -4,17 +4,16 @@
 #include "pch.h"
 #include "framework.h"
 #include "GameCoding.h"
+#include "Game.h"
 
 
 #define MAX_LOADSTRING 100
 
-int mousePosX;
-int mousePosY;
 
 // Global Variables:
-HINSTANCE hInst;                                // current instance
-WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
-WCHAR szWindowClass[MAX_LOADSTRING];            // the main window class name
+HINSTANCE hInst;
+HWND g_hWnd;
+
 
 // Forward declarations of functions included in this code module:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -31,15 +30,19 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     MyRegisterClass(hInstance);
 
     // 2) 윈도우 창 생성
-    if (!InitInstance (hInstance, nCmdShow))
+    if (!InitInstance(hInstance, nCmdShow))
     {
         return FALSE;
     }
 
-    MSG msg;
+    Game game;
+    game.Init(g_hWnd);
+
+
+    MSG msg = {};
 
     // 3) 메인 루프
-    while (true)
+    while (msg.message != WM_QUIT)
     {
         if (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
         {
@@ -49,6 +52,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         else
         {
             // 게임
+            game.Update();
+            game.Render();
 
         }
     }
@@ -103,6 +108,8 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
    HWND hWnd = CreateWindowW(L"GameCoding", L"Client", WS_OVERLAPPEDWINDOW,
       CW_USEDEFAULT, 0, windowRect.right - windowRect.left, windowRect.bottom - windowRect.top, nullptr, nullptr, hInstance, nullptr);
+
+   g_hWnd = hWnd;
 
    if (!hWnd)
    {

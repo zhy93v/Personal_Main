@@ -1,14 +1,3 @@
-#pragma once
-
-#include "Types.h"
-#include "Defines.h"
-#include "Enums.h"
-
-#include <windows.h>
-#include <vector>
-#include <list>
-#include <map>
-#include <unordered_map>
-#include <string>
-#include <algorithm>
-using namespace std;
+version https://git-lfs.github.com/spec/v1
+oid sha256:3488898af849b52ff9a2a9198d33b7211c8d9d12d0bab26ebed27797a6715aa0
+size 243

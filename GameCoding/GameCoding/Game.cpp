@@ -1,29 +1,3 @@
-#include "pch.h"
-#include "Game.h"
-
-
-Game::Game()
-{
-
-}
-
-Game::~Game()
-{
-
-}
-
-void Game::Init(HWND hwnd)
-{
-	_hwnd = hwnd;
-	_hdc = ::GetDC(hwnd);
-}
-
-void Game::Update()
-{
-
-}
-
-void Game::Render()
-{
-	::Rectangle(_hdc, 200, 200, 400, 400);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1d7b69c55404cbd499b5fffc76a524a65c3196279439861f6d0b14fe7507f51
+size 263

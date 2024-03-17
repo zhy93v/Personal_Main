@@ -1,10 +1,3 @@
-#pragma once
-
-using int8   = __int8;
-using int16  = __int16;
-using int32  = __int32;
-using int64  = __int64;
-using uint8  = unsigned __int8;
-using uint16 = unsigned __int16;
-using uint32 = unsigned __int32;
-using uint64 = unsigned __int64;
+version https://git-lfs.github.com/spec/v1
+oid sha256:dce5f820a88648de49abe3555f3f9b0b98e4bf5da2a1833975557915c70757c3
+size 248

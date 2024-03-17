@@ -1,6 +1,3 @@
-#pragma once
-
-// // Including SDKDDKVer.h defines the highest available Windows platform.
-// If you wish to build your application for a previous Windows platform, include WinSDKVer.h and
-// set the _WIN32_WINNT macro to the platform you wish to support before including SDKDDKVer.h.
-#include <SDKDDKVer.h>
+version https://git-lfs.github.com/spec/v1
+oid sha256:98488711a351764d005e8c3d3fd40aaed28396870a660c28abd81ac2a53d4b90
+size 313

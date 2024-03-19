@@ -1,6 +1,3 @@
-﻿  Hello.c
-C:\Users\zhy93\OneDrive\Desktop\UE5\Personal_Main\C_Basic\Hello.c(13,8): warning C4101: 'fl': unreferenced local variable
-C:\Users\zhy93\OneDrive\Desktop\UE5\Personal_Main\C_Basic\Hello.c(11,7): warning C4101: 'lo': unreferenced local variable
-C:\Users\zhy93\OneDrive\Desktop\UE5\Personal_Main\C_Basic\Hello.c(14,9): warning C4101: 'du': unreferenced local variable
-C:\Users\zhy93\OneDrive\Desktop\UE5\Personal_Main\C_Basic\Hello.c(10,6): warning C4101: 'i': unreferenced local variable
-  C_Basic.vcxproj -> C:\Users\zhy93\OneDrive\Desktop\UE5\Personal_Main\C_Basic\x64\Debug\C_Basic.exe
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d13548a82ab75ee4a4b78067d68d4f7c695b8c6cdf15db34c868b26f43dce89
+size 88
